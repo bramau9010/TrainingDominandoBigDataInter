@@ -4,7 +4,7 @@ ML_Prop  := $.File_Property.MLProp;
 
 EXPORT Prep01 := MODULE
   MLPropExt := RECORD(ML_Prop)
-    UNSIGNED4 rnd; // A random number
+    UNSIGNED4 rnd; // A random number para tirar o vies
   END;
   // Clean the data and assign a random number to each record
   CleanFilter := Property.zip <> '' AND Property.assessed_value <> 0 AND Property.year_acquired <> 0 AND 
@@ -12,7 +12,7 @@ EXPORT Prep01 := MODULE
                  Property.bedrooms <> 0 AND Property.year_Built <> 0;
 							 
   EXPORT myDataE := PROJECT(Property(CleanFilter), TRANSFORM(MLPropExt, 
-                                                             SELF.rnd := RANDOM(),
+                                                             SELF.rnd := RANDOM(),//insere um valor aleatorio
                                                              SELF := LEFT));
 																														 
   // Shuffle your data by sorting on the random field
