@@ -17,11 +17,11 @@ IMPORT DataPatterns, $;
 //OUTPUT(DataPatterns.Profile($.Dicotomy_Loan_b.Dataset_binomial),ALL);
 
 //Dataset filtrado com campos de interesse
-$.File_landing_Brayan.Dataset_Lendings;
+//$.File_landing_Brayan.Dataset_Lendings;
 
 //Dataset limpo e com campo aleatório
-// OUTPUT($.Prep01.myDataE,NAMED('CleanLendings'));
-// COUNT($.Prep01.myDataE);
+OUTPUT($.Prep_brayan.myDataE,NAMED('CleanLendings'));
+COUNT($.Prep_brayan.myDataE);
 
 //Amostras de treinamento e teste
 // OUTPUT($.Prep01.myTrainData,NAMED('TrainData'));
