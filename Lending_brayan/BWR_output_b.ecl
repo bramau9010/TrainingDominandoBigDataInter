@@ -1,7 +1,7 @@
-IMPORT $;
+IMPORT DataPatterns, $;
 
 //Dataset bruto
-FileRaw := $.File_raw_b.Dataset_raw;
+//FileRaw := $.File_raw_b.Dataset_raw;
 //FileRaw := $.layaout_optimized.Dataset_optimized1;
 //OUTPUT(FileRaw);
 //COUNT(FileRaw);
@@ -13,11 +13,11 @@ FileRaw := $.File_raw_b.Dataset_raw;
 // DataPatterns.Profile($.File_Optimized.Dataset_Optimized);
 
 //Dataset filtrado com loan_status (0/1)
-OUTPUT($.Dicotomy_Loan_b);
+//OUTPUT($.Dicotomy_Loan_b);
 //OUTPUT(DataPatterns.Profile($.Dicotomy_Loan_b.Dataset_binomial),ALL);
 
 //Dataset filtrado com campos de interesse
-// $.File_Lendings.Dataset_Lendings;
+$.File_landing_Brayan.Dataset_Lendings;
 
 //Dataset limpo e com campo aleatório
 // OUTPUT($.Prep01.myDataE,NAMED('CleanLendings'));
