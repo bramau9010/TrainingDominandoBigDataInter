@@ -24,13 +24,13 @@ IMPORT DataPatterns, $;
 //COUNT($.Prep_brayan.myDataE);
 
 //Amostras de treinamento e teste
-OUTPUT($.Prep_brayan.myTrainData,NAMED('TrainData'));
-COUNT($.Prep_brayan.myTrainData);
-OUTPUT($.Prep_brayan.myTestData,NAMED('TestData'));
-COUNT($.Prep_brayan.myTestData);
+// OUTPUT($.Prep_brayan.myTrainData,NAMED('TrainData'));
+// COUNT($.Prep_brayan.myTrainData);
+// OUTPUT($.Prep_brayan.myTestData,NAMED('TestData'));
+// COUNT($.Prep_brayan.myTestData);
 
 //Variáveis dependentes e independentes para treinamento e teste em formato data frame
-//OUTPUT($.Convert02.myIndTrainDataNF,NAMED('IndTrain'));
-//OUTPUT($.Convert02.myDepTrainDataNF,NAMED('DepTrain'));
-//OUTPUT($.Convert02.myIndTestDataNF,NAMED('IndTest'));
-//OUTPUT($.Convert02.myDepTestDataNF,NAMED('DepTest'));
+OUTPUT($.convert_brayan.myIndTrainDataNF,NAMED('IndTrain'));
+OUTPUT($.convert_brayan.myDepTrainDataNF,NAMED('DepTrain'));
+OUTPUT($.convert_brayan.myIndTestDataNF,NAMED('IndTest'));
+OUTPUT($.convert_brayan.myDepTestDataNF,NAMED('DepTest'));
